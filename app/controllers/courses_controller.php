@@ -13,6 +13,29 @@ class CoursesController extends AppController {
 			$this->Session->setFlash(__('Invalid course', true));
 			$this->redirect(array('action' => 'index'));
 		}
+
+		$lectures = $this->Course->CourseEvent->find(
+			'all', array(
+				'conditions' => array(
+					'CourseEvent.course_id' => $id, 
+					'CourseEvent.event_type_id' => 1
+				), 
+				'order' => 'CourseEvent.day'
+			)
+		);
+
+		$exercise_groups = $this->Course->CourseEvent->find(
+			'all', array(
+				'conditions' => array(
+					'CourseEvent.course_id' => $id, 
+					'CourseEvent.event_type_id' => 2
+				), 
+				'order' => 'CourseEvent.day'
+			)
+		);
+
+		$this->set('lectures', $lectures);
+		$this->set('exercise_groups', $exercise_groups);
 		$this->set('course', $this->Course->read(null, $id));
 	}
 

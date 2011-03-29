@@ -21,7 +21,7 @@ class CourseEventsController extends AppController {
 			$this->CourseEvent->create();
 			if ($this->CourseEvent->save($this->data)) {
 				$this->Session->setFlash(__('The course event has been saved', true));
-				$this->redirect(array('action' => 'index'));
+				$this->redirect(array('plugin' => false, 'controller' => 'courses', 'action' => 'view', $this->data['CourseEvent']['course_id']));
 			} else {
 				$this->Session->setFlash(__('The course event could not be saved. Please, try again.', true));
 			}

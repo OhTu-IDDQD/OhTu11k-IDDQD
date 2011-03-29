@@ -62,10 +62,9 @@
 					echo $this->Html->link(
 						'Kurssitarjonta', 
 						array(
-							'plugin' => 'full_calendar', 
-							'controller' => 'event_types', 
-							'action' => 'view', 
-							'1'
+							'plugin' => false, 
+							'controller' => 'courses', 
+							'action' => 'index'
 						)
 					);
 
