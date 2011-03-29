@@ -47,6 +47,18 @@
 				<br />
 				<br />
 				<?php
+
+					echo $this->Html->link(
+						'Kalenteri', 
+						array(
+							'plugin' => 'full_calendar', 
+							'controller' => 'full_calendar', 
+							'action' => 'index'
+						)
+					);
+
+					echo "<br />\n";
+
 					echo $this->Html->link(
 						'Kurssitarjonta', 
 						array(
@@ -58,16 +70,7 @@
 					);
 
 					echo "<br />\n";
-					echo $this->Html->link(
-						'Kalenteri', 
-						array(
-							'plugin' => 'full_calendar', 
-							'controller' => 'full_calendar', 
-							'action' => 'index'
-						)
-					);
 
-					echo "<br />\n";
 					/*echo $this->Html->link(
 						'Omat kurssit', 
 						array(

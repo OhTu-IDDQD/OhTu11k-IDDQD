@@ -28,11 +28,11 @@
 			<?php echo $event['Event']['details']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Status'); ?></dt>
+		<?php /*<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Status'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $event['Event']['status']; ?>
 			&nbsp;
-		</dd>
+		</dd> */ ?>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Start'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $event['Event']['start']; ?>
@@ -43,7 +43,7 @@
 			<?php if($event['Event']['all_day'] != 1) { echo $event['Event']['end']; } else { echo "N/A"; } ?>
 			&nbsp;
 		</dd>
-        <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('All Day'); ?></dt>
+       <?php /* <dt<?php if ($i % 2 == 0) echo $class;?>><?php __('All Day'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php if($event['Event']['all_day'] == 1) { echo "Yes"; } else { echo "No"; } ?>
 			&nbsp;
@@ -57,7 +57,7 @@
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $event['Event']['modified']; ?>
 			&nbsp;
-		</dd>
+		</dd> */ ?>
 	</dl>
 </div>
 <div class="actions">

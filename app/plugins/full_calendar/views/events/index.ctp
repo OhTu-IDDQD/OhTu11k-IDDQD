@@ -10,8 +10,14 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 ?>
+
 <div class="events index">
-	<h2><?php __('Events');?></h2>
+	<h2><?php __('Tapahtumat');?></h2>
+<div>
+<ul>
+	<li><?php echo $this->Html->link(__('Uusi tapahtuma', true), array('plugin' => 'full_calendar', 'action' => 'add')); ?></li>
+</ul>
+</div>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('event_type_id');?></th>
@@ -34,7 +40,7 @@
 		<td>
 			<?php echo $this->Html->link($event['EventType']['name'], array('controller' => 'event_types', 'action' => 'view', $event['EventType']['id'])); ?>
 		</td>
-		<td><?php echo $event['Event']['title']; ?></td>
+		<td><?php echo $this->Html->link($event['Event']['title'], array('plugin' => 'full_calendar', 'controller' => 'events', 'action' => 'view', $event['Event']['id'])); ?></td>
 		<?php /*<td><?php echo $event['Event']['status']; ?></td> */ ?>
 		<td><?php echo $event['Event']['start']; ?></td>
         <?php if($event['Event']['all_day'] == 0) { ?>
@@ -64,6 +70,7 @@
 		<?php echo $this->Paginator->next(__('next', true) . ' >>', array(), null, array('class' => 'disabled'));?>
 	</div>
 </div>
+
 <div class="actions">
 	<ul>
 		<li><?php echo $this->Html->link(__('New Event', true), array('plugin' => 'full_calendar', 'action' => 'add')); ?></li>

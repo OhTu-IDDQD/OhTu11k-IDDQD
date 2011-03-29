@@ -18,15 +18,15 @@
 		echo $this->Form->input('event_type_id');
 		echo $this->Form->input('title');
 		echo $this->Form->input('details');
-		echo $this->Form->input('start');
-		echo $this->Form->input('end');
-		echo $this->Form->input('all_day', array('checked' => 'checked'));
-		echo $this->Form->input('status', array('options' => array(
+		echo $this->Form->input('start', array('dateFormat' => 'DMY', 'timeFormat' => '24'));
+		echo $this->Form->input('end', array('dateFormat' => 'DMY', 'timeFormat' => '24'));
+//		echo $this->Form->input('all_day', array('checked' => 'checked'));
+/*		echo $this->Form->input('status', array('options' => array(
 					'Scheduled' => 'Scheduled','Confirmed' => 'Confirmed','In Progress' => 'In Progress',
 					'Rescheduled' => 'Rescheduled','Completed' => 'Completed'
 				)
 			)
-		);
+		); */
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>
