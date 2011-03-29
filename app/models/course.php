@@ -5,6 +5,19 @@ class Course extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 	var $hasMany = array(
+		'CourseEvent' => array(
+			'className' => 'CourseEvent',
+			'foreignKey' => 'course_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'Event' => array(
 			'className' => 'Event',
 			'foreignKey' => 'course_id',
@@ -20,19 +33,6 @@ class Course extends AppModel {
 		),
 		'TrainingQuestion' => array(
 			'className' => 'TrainingQuestion',
-			'foreignKey' => 'course_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'UserEvent' => array(
-			'className' => 'UserEvent',
 			'foreignKey' => 'course_id',
 			'dependent' => false,
 			'conditions' => '',
