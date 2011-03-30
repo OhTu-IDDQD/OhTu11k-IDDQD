@@ -41,6 +41,7 @@
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
+			<?php echo $this->Session->flash('auth'); ?>
 		
 			<div id='menu'>
 				Matti Meikäläinen 013798342679
@@ -91,14 +92,16 @@
 
 
 					echo "<br />\n";
-					echo $this->Html->link(
-						'Kirjaudu ulos', 
-						array(
-							'plugin' => false, 
-							'controller' => 'user_events', 
-							'action' => 'view'
-						)
+					if ( $this->Session->read('Auth.User.id') ) {
+						echo $this->Html->link(
+							__('Logout', true), 
+							array(
+								'plugin' => false, 
+								'controller' => 'users', 
+								'action' => 'logout'
+							)
 					);
+					}
 				?>
 			</div>
 

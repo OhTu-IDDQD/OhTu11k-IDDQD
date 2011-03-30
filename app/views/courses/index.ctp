@@ -10,10 +10,9 @@
 
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('name');?></th>
 			<th><?php echo $this->Paginator->sort('teacher');?></th>
-			<th><?php echo $this->Paginator->sort('description');?></th>
+			<?php /* <th><?php echo $this->Paginator->sort('description');?></th>*/ ?>
 			<th><?php echo $this->Paginator->sort('start');?></th>
 			<th><?php echo $this->Paginator->sort('end');?></th>
 			<th class="actions"><?php __('Actions');?></th>
@@ -27,10 +26,9 @@
 		}
 	?>
 	<tr<?php echo $class;?>>
-		<td><?php echo $course['Course']['id']; ?>&nbsp;</td>
 		<td><?php echo $this->Html->link($course['Course']['name'], array('plugin' => false, 'controller' => 'courses', 'action' => 'view', $course['Course']['id'])); ?>&nbsp;</td>
 		<td><?php echo $course['Course']['teacher']; ?>&nbsp;</td>
-		<td><?php echo $course['Course']['description']; ?>&nbsp;</td>
+		<?php /*<td><?php echo $course['Course']['description']; ?>&nbsp;</td> */ ?>
 		<td><?php echo $course['Course']['start']; ?>&nbsp;</td>
 		<td><?php echo $course['Course']['end']; ?>&nbsp;</td>
 		<td class="actions">

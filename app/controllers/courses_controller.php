@@ -57,16 +57,6 @@ class CoursesController extends AppController {
 			)
 		);
 
-		/*
-		if (!empty($this->data)) {
-			$this->Course->create();
-			if ($this->Course->save($this->data)) {
-				$this->Session->setFlash(__('The course has been saved', true));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The course could not be saved. Please, try again.', true));
-			}
-		}*/
 	}
 
 	function edit($id = null) {

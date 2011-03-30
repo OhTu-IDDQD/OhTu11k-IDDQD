@@ -1,14 +1,16 @@
+<?php //die(pr($this->data)); ?>
+
 <div class="courses form">
 <?php echo $this->Form->create('Course');?>
 	<fieldset>
-		<legend><?php __('Edit Course'); ?></legend>
+		<legend><?php echo $this->data['Course']['name']; ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('name');
+		//echo $this->Form->input('name');
 		echo $this->Form->input('teacher');
 		echo $this->Form->input('description');
-		echo $this->Form->input('start');
-		echo $this->Form->input('end');
+		//echo $this->Form->input('start');
+		//echo $this->Form->input('end');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

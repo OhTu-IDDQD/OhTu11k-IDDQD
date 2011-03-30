@@ -8,6 +8,15 @@ $event_types = array('1' => __('Lecture', true), 2 => __('Exercise Group', true)
 <div class="courses view">
 <h2><?php  __($course['Course']['name']);?> (<?php echo $course['Course']['id']; ?>)</h2>
 <?php
+	echo $html->link(
+		__('Edit Course', true), 
+		array(
+			'plugin' => false, 
+			'controller' => 'courses', 
+			'action' => 'edit', 
+			$course['Course']['id']
+		)
+	);
 	echo "<div>".date('d.m.Y', strtotime($course['Course']['start']))." - ".date('d.m.Y', strtotime($course['Course']['end']))."</div>\n";
 
 
