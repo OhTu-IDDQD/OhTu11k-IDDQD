@@ -29,6 +29,7 @@ class EventsController extends FullCalendarAppController {
 
 	function add() {
 		if (!empty($this->data)) {
+			$this->data['Event']['user_id'] = $this->Session->read('Auth.User.id');
 			$this->Event->create();
 			if ($this->Event->save($this->data)) {
 				$this->Session->setFlash(__('The event has been saved', true));
@@ -75,7 +76,7 @@ class EventsController extends FullCalendarAppController {
 	function feed($id=null) {
 		$this->layout = "ajax";
 		$vars = $this->params['url'];
-		$conditions = array('conditions' => array('UNIX_TIMESTAMP(start) >=' => $vars['start'], 'UNIX_TIMESTAMP(start) <=' => $vars['end']));
+		$conditions = array('conditions' => array('UNIX_TIMESTAMP(start) >=' => $vars['start'], 'UNIX_TIMESTAMP(start) <=' => $vars['end'], 'user_id' => $this->Session->read('Auth.User.id')));
 		$events = $this->Event->find('all', $conditions);
 		foreach($events as $event) {
 			if($event['Event']['all_day'] == 1) { 

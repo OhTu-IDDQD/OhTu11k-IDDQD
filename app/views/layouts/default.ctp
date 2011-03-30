@@ -44,7 +44,14 @@
 			<?php echo $this->Session->flash('auth'); ?>
 		
 			<div id='menu'>
-				Matti Meikäläinen 013798342679
+			<?php
+			if ( $this->Session->read('Auth.User.id') ) {
+				echo $this->Session->read('Auth.User.name');
+				echo "<br />\n";
+				echo $this->Session->read('Auth.User.student_id');
+			}
+			else __('Not logged in');
+			?>
 				<br />
 				<br />
 				<?php
@@ -89,7 +96,6 @@
 							'action' => 'index'
 						)
 					);
-
 
 					echo "<br />\n";
 					if ( $this->Session->read('Auth.User.id') ) {
