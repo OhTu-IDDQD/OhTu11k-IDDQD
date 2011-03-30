@@ -53,7 +53,7 @@ $(document).ready(function() {
 		firstDay: 1, 
 		weekMode: 'variable',
 		aspectRatio: 2,
-		editable: true,
+		editable: false,
 		events: "/iddqd/index.php/full_calendar/events/feed",
 		eventRender: function(event, element) {
         	element.qtip({

@@ -3,9 +3,16 @@ class CoursesController extends AppController {
 
 	var $name = 'Courses';
 
-	function index() {
-		$this->Course->recursive = 0;
-		$this->set('courses', $this->paginate());
+	function index($all=false) {
+
+		if ( !$all ) {
+			$this->paginate = array('conditions' => array('end >=' => date('Y-m-d')));
+			$this->set('all', false);
+		}
+		else $this->set('all', true);
+
+		//$this->Course->recursive = 0;
+		$this->set('courses', $this->paginate('Course'));
 	}
 
 	function view($id = null) {

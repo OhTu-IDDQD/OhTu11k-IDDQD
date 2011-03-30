@@ -15,15 +15,20 @@ class EventsController extends FullCalendarAppController {
 	var $name = 'Events';
 
 	function index() {
-
-		$this->paginate = array(
+	
+		$sql_fragment = array(
 			'conditions' => array(
 				'Event.user_id' => $this->Auth->user('id'), 
 				'Event.start >=' => date('Y-m-d H:i:s')
-			)
+			), 
+			'order' => 'Event.start'
 		);
-		
-		$events = $this->paginate('Event');
+
+		if ( $this->RequestHandler->ext == 'csv' ) $events = $this->Event->find('all', $sql_fragment);
+		else {
+			$this->paginate = $sql_fragment;
+			$events = $this->paginate('Event');
+		}
 
 		$this->set('events', $events);
 	}

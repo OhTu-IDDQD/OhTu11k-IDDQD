@@ -8,6 +8,11 @@ class UserCoursesController extends AppController {
 		$this->paginate = array(
 			'conditions' => array('UserCourse.user_id' => $this->Auth->user('id'))
 		);
+		
+		$userCourses = $this->paginate('UserCourse');
+		
+
+
 		$this->set('userCourses', $this->paginate('UserCourse'));
 	}
 

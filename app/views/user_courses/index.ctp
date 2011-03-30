@@ -1,5 +1,12 @@
 <div class="userCourses index">
 	<h2><?php __('User Courses');?></h2>
+
+<?php
+echo "<ul>\n";
+echo "<li>".$this->Html->link(__('Export .csv', true), array('plugin' => false, 'controller' => 'user_courses', 'action' => 'index', 'ext' => 'csv'))."</li>\n";
+echo "</ul>\n";
+?>
+
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>

@@ -4,7 +4,14 @@
 <div class="">
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Course', true), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Update Courses', true), array('action' => 'add')); ?></li>
+
+<?php
+
+	if ( $all ) echo $this->Html->link(__('Current Courses', true), array('action' => 'index'));
+	else echo $this->Html->link(__('All Courses', true), array('action' => 'index', 'all'));
+
+?>
 	</ul>
 </div>
 

@@ -15,7 +15,8 @@
 	<h2><?php __('Events');?></h2>
 <div>
 <ul>
-	<li><?php echo $this->Html->link(__('New event', true), array('plugin' => 'full_calendar', 'action' => 'add')); ?></li>
+	<li><?php echo $this->Html->link(__('New event', true), array('plugin' => 'full_calendar', 'controller' => 'events', 'action' => 'add')); ?></li>
+	<li><?php echo $this->Html->link(__('Export as .csv', true), array('plugin' => 'full_calendar', 'controller' => 'events', 'action' => 'index', 'ext' => 'csv')); ?></li>
 </ul>
 </div>
 	<table cellpadding="0" cellspacing="0">

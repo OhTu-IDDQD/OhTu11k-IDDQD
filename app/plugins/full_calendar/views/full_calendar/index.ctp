@@ -11,7 +11,7 @@
  */
 
 echo $javascript->link('/full_calendar/js/jquery-1.5.min', false);
-//echo $javascript->link('/full_calendar/js/jquery-ui-1.8.9.custom.min', false);
+echo $javascript->link('/full_calendar/js/jquery-ui-1.8.9.custom.min', false);
 echo $javascript->link('/full_calendar/js/fullcalendar.min', false);
 echo $javascript->link('/full_calendar/js/jquery.qtip-1.0.0-rc3.min', false);
 echo $javascript->link('/full_calendar/js/ready', false);
