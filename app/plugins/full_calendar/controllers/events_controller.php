@@ -38,7 +38,7 @@ class EventsController extends FullCalendarAppController {
 				$this->Session->setFlash(__('The event could not be saved. Please, try again.', true));
 			}
 		}
-		$this->set('eventTypes', $this->Event->EventType->find('list'));
+		$this->set('eventTypes', $this->Event->EventType->find('list', array('conditions' => array('EventType.id NOT' => array(1,2)))));
 	}
 
 	function edit($id = null) {

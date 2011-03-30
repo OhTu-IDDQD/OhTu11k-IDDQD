@@ -115,9 +115,16 @@ if ( !empty($exercise_groups) ) {
 		echo "<td>".$days[$exercise_group['day']]."</td>";
 		echo "<td>".date('H:i', strtotime($exercise_group['start']))." - ".date('H:i', strtotime($exercise_group['end']))."</td>";
 		echo "<td>";
+
+		echo $form->create('UserCourse', array('action' => 'add'));
+		echo $form->input('course_id', array('type' => 'hidden', 'value' => $course['Course']['id']));
+		echo $form->input('course_event_id', array('type' => 'hidden', 'value' => $exercise_group['id']));
+		echo $form->submit(__('Select', true), array('div' => false));
+		echo $form->end();
+/*
 		echo $this->Html->link(__('View', true), array('controller' => 'course_events', 'action' => 'view', $exercise_group['id']));
 		echo $this->Html->link(__('Edit', true), array('controller' => 'course_events', 'action' => 'edit', $exercise_group['id']));
-		echo $this->Html->link(__('Delete', true), array('controller' => 'course_events', 'action' => 'delete', $exercise_group['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $exercise_group['id']));
+		echo $this->Html->link(__('Delete', true), array('controller' => 'course_events', 'action' => 'delete', $exercise_group['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $exercise_group['id']));*/
 		echo "</td>";
 
 		echo "</tr>";

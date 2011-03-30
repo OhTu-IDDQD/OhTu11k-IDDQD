@@ -20,5 +20,22 @@ class CourseEvent extends AppModel {
 			'order' => ''
 		)
 	);
+
+	
+function eventsByDay($course_id, $day) {
+	$events = $this->find(
+		'all', 
+		array(
+			'conditions' => array(
+				'CourseEvent.course_id' => $course_id, 
+				'CourseEvent.day' => $day
+			), 
+			'contain' => array()
+		)
+	);
+	
+	return $events;
+}
+
 }
 ?>
