@@ -40,6 +40,24 @@ class CoursesController extends AppController {
 	}
 
 	function add() {
+		$new_courses = $this->Course->getCoursesData();
+		
+		if ( $new_courses > 0 ) {
+			$this->Session->setFlash(__('New courses have been added', true));
+		}
+		else {
+			$this->Session->setFlash(__('No new courses found', true));
+		}
+	
+		$this->redirect(
+			array(
+				'plugin' => false, 
+				'controller' => 'courses', 
+				'action' => 'index'
+			)
+		);
+
+		/*
 		if (!empty($this->data)) {
 			$this->Course->create();
 			if ($this->Course->save($this->data)) {
@@ -48,7 +66,7 @@ class CoursesController extends AppController {
 			} else {
 				$this->Session->setFlash(__('The course could not be saved. Please, try again.', true));
 			}
-		}
+		}*/
 	}
 
 	function edit($id = null) {

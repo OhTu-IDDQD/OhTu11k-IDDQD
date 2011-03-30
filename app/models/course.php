@@ -46,5 +46,40 @@ class Course extends AppModel {
 		)
 	);
 
+
+function getCoursesData() {
+	$courses = file_get_contents('http://www.cs.helsinki.fi/u/tkairi/rajapinta/courses.json');
+	$courses = json_decode($courses,true);
+	$new_courses = 0;
+	
+	foreach($courses['courses'] as $course) {
+		$exist = $this->find(
+			'first', 
+			array(
+				'conditions' => array(
+					'Course.name' => $course['course'], 
+					'Course.start' => $course['start_date'], 
+					'Course.end' => $course['end_date']
+				)
+			)
+		);
+		if ( empty($exist) ) {
+			$this->create(
+				array(
+					'name' => $course['course'], 
+					'start' => $course['start_date'], 
+					'end' => $course['end_date']
+				)
+			);
+			$this->save();
+			
+			$new_courses++;
+		}
+	}
+	
+	return $new_courses;
+}
+
+
 }
 ?>
