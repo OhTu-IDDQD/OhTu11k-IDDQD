@@ -12,10 +12,10 @@
 ?>
 
 <div class="events index">
-	<h2><?php __('Tapahtumat');?></h2>
+	<h2><?php __('Events');?></h2>
 <div>
 <ul>
-	<li><?php echo $this->Html->link(__('Uusi tapahtuma', true), array('plugin' => 'full_calendar', 'action' => 'add')); ?></li>
+	<li><?php echo $this->Html->link(__('New event', true), array('plugin' => 'full_calendar', 'action' => 'add')); ?></li>
 </ul>
 </div>
 	<table cellpadding="0" cellspacing="0">
@@ -24,7 +24,6 @@
 			<th><?php echo $this->Paginator->sort('title');?></th>
 			<?php /*<th><?php echo $this->Paginator->sort('status');?></th> */?>
 			<th><?php echo $this->Paginator->sort('start');?></th>
-            <th><?php echo $this->Paginator->sort('end');?></th>
             <?php /*<th><?php echo $this->Paginator->sort('all_day');?></th>*/?>
 			<th class="actions"></th>
 	</tr>
@@ -42,8 +41,16 @@
 		</td>
 		<td><?php echo $this->Html->link($event['Event']['title'], array('plugin' => 'full_calendar', 'controller' => 'events', 'action' => 'view', $event['Event']['id'])); ?></td>
 		<?php /*<td><?php echo $event['Event']['status']; ?></td> */ ?>
-		<td><?php echo $event['Event']['start']; ?></td>
-        <?php if($event['Event']['all_day'] == 0) { ?>
+
+
+<?php
+	echo "<td>".date('Y-m-d H:i', strtotime($event['Event']['start']))."-".date('H:i', strtotime($event['Event']['end']))."</td>\n";
+?>
+
+
+
+
+<?php /*        <?php if($event['Event']['all_day'] == 0) { ?>
    		<td><?php echo $event['Event']['end']; ?></td>
         <?php } else { ?>
 		<td>N/A</td>

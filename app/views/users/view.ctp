@@ -36,6 +36,11 @@
 			<?php echo $user['User']['modified']; ?>
 			&nbsp;
 		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Student Id'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $user['User']['student_id']; ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">
@@ -47,8 +52,8 @@
 		<li><?php echo $this->Html->link(__('New User', true), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Events', true), array('controller' => 'events', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Event', true), array('controller' => 'events', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List User Events', true), array('controller' => 'user_events', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User Event', true), array('controller' => 'user_events', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List User Courses', true), array('controller' => 'user_courses', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User Course', true), array('controller' => 'user_courses', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -57,12 +62,17 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php __('Id'); ?></th>
-		<th><?php __('Name'); ?></th>
+		<th><?php __('Event Type Id'); ?></th>
+		<th><?php __('Title'); ?></th>
+		<th><?php __('Details'); ?></th>
 		<th><?php __('Course Id'); ?></th>
 		<th><?php __('User Id'); ?></th>
-		<th><?php __('P Start'); ?></th>
-		<th><?php __('P End'); ?></th>
-		<th><?php __('Crated'); ?></th>
+		<th><?php __('Start'); ?></th>
+		<th><?php __('End'); ?></th>
+		<th><?php __('Status'); ?></th>
+		<th><?php __('All Day'); ?></th>
+		<th><?php __('Active'); ?></th>
+		<th><?php __('Created'); ?></th>
 		<th><?php __('Modified'); ?></th>
 		<th class="actions"><?php __('Actions');?></th>
 	</tr>
@@ -76,12 +86,17 @@
 		?>
 		<tr<?php echo $class;?>>
 			<td><?php echo $event['id'];?></td>
-			<td><?php echo $event['name'];?></td>
+			<td><?php echo $event['event_type_id'];?></td>
+			<td><?php echo $event['title'];?></td>
+			<td><?php echo $event['details'];?></td>
 			<td><?php echo $event['course_id'];?></td>
 			<td><?php echo $event['user_id'];?></td>
-			<td><?php echo $event['p_start'];?></td>
-			<td><?php echo $event['p_end'];?></td>
-			<td><?php echo $event['crated'];?></td>
+			<td><?php echo $event['start'];?></td>
+			<td><?php echo $event['end'];?></td>
+			<td><?php echo $event['status'];?></td>
+			<td><?php echo $event['all_day'];?></td>
+			<td><?php echo $event['active'];?></td>
+			<td><?php echo $event['created'];?></td>
 			<td><?php echo $event['modified'];?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View', true), array('controller' => 'events', 'action' => 'view', $event['id'])); ?>
@@ -100,35 +115,35 @@
 	</div>
 </div>
 <div class="related">
-	<h3><?php __('Related User Events');?></h3>
-	<?php if (!empty($user['UserEvent'])):?>
+	<h3><?php __('Related User Courses');?></h3>
+	<?php if (!empty($user['UserCourse'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php __('Id'); ?></th>
-		<th><?php __('Event Id'); ?></th>
 		<th><?php __('User Id'); ?></th>
+		<th><?php __('Course Id'); ?></th>
 		<th><?php __('Created'); ?></th>
 		<th><?php __('Modified'); ?></th>
 		<th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
 		$i = 0;
-		foreach ($user['UserEvent'] as $userEvent):
+		foreach ($user['UserCourse'] as $userCourse):
 			$class = null;
 			if ($i++ % 2 == 0) {
 				$class = ' class="altrow"';
 			}
 		?>
 		<tr<?php echo $class;?>>
-			<td><?php echo $userEvent['id'];?></td>
-			<td><?php echo $userEvent['event_id'];?></td>
-			<td><?php echo $userEvent['user_id'];?></td>
-			<td><?php echo $userEvent['created'];?></td>
-			<td><?php echo $userEvent['modified'];?></td>
+			<td><?php echo $userCourse['id'];?></td>
+			<td><?php echo $userCourse['user_id'];?></td>
+			<td><?php echo $userCourse['course_id'];?></td>
+			<td><?php echo $userCourse['created'];?></td>
+			<td><?php echo $userCourse['modified'];?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View', true), array('controller' => 'user_events', 'action' => 'view', $userEvent['id'])); ?>
-				<?php echo $this->Html->link(__('Edit', true), array('controller' => 'user_events', 'action' => 'edit', $userEvent['id'])); ?>
-				<?php echo $this->Html->link(__('Delete', true), array('controller' => 'user_events', 'action' => 'delete', $userEvent['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $userEvent['id'])); ?>
+				<?php echo $this->Html->link(__('View', true), array('controller' => 'user_courses', 'action' => 'view', $userCourse['id'])); ?>
+				<?php echo $this->Html->link(__('Edit', true), array('controller' => 'user_courses', 'action' => 'edit', $userCourse['id'])); ?>
+				<?php echo $this->Html->link(__('Delete', true), array('controller' => 'user_courses', 'action' => 'delete', $userCourse['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $userCourse['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -137,7 +152,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New User Event', true), array('controller' => 'user_events', 'action' => 'add'));?> </li>
+			<li><?php echo $this->Html->link(__('New User Course', true), array('controller' => 'user_courses', 'action' => 'add'));?> </li>
 		</ul>
 	</div>
 </div>

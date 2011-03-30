@@ -4,8 +4,11 @@ class UserCoursesController extends AppController {
 	var $name = 'UserCourses';
 
 	function index() {
-		$this->UserCourse->recursive = 0;
-		$this->set('userCourses', $this->paginate());
+
+		$this->paginate = array(
+			'conditions' => array('UserCourse.user_id' => $this->Auth->user('id'))
+		);
+		$this->set('userCourses', $this->paginate('UserCourse'));
 	}
 
 	function view($id = null) {

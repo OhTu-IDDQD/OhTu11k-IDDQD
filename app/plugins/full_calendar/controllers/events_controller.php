@@ -15,8 +15,17 @@ class EventsController extends FullCalendarAppController {
 	var $name = 'Events';
 
 	function index() {
-		$this->Event->recursive = 1;
-		$this->set('events', $this->paginate());
+
+		$this->paginate = array(
+			'conditions' => array(
+				'Event.user_id' => $this->Auth->user('id'), 
+				'Event.start >=' => date('Y-m-d H:i:s')
+			)
+		);
+		
+		$events = $this->paginate('Event');
+
+		$this->set('events', $events);
 	}
 
 	function view($id = null) {

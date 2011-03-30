@@ -78,6 +78,17 @@
 
 					echo "<br />\n";
 
+					echo $this->Html->link(
+						'Omat kurssit', 
+						array(
+							'plugin' => false, 
+							'controller' => 'user_courses', 
+							'action' => 'index'
+						)
+					);
+
+					echo "<br />\n";
+
 					/*echo $this->Html->link(
 						'Omat kurssit', 
 						array(

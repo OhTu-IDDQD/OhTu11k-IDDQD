@@ -9,6 +9,7 @@
 			<th><?php echo $this->Paginator->sort('teacher');?></th>
 			<th><?php echo $this->Paginator->sort('created');?></th>
 			<th><?php echo $this->Paginator->sort('modified');?></th>
+			<th><?php echo $this->Paginator->sort('student_id');?></th>
 			<th class="actions"><?php __('Actions');?></th>
 	</tr>
 	<?php
@@ -27,6 +28,7 @@
 		<td><?php echo $user['User']['teacher']; ?>&nbsp;</td>
 		<td><?php echo $user['User']['created']; ?>&nbsp;</td>
 		<td><?php echo $user['User']['modified']; ?>&nbsp;</td>
+		<td><?php echo $user['User']['student_id']; ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $user['User']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $user['User']['id'])); ?>
@@ -55,7 +57,7 @@
 		<li><?php echo $this->Html->link(__('New User', true), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Events', true), array('controller' => 'events', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Event', true), array('controller' => 'events', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List User Events', true), array('controller' => 'user_events', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User Event', true), array('controller' => 'user_events', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List User Courses', true), array('controller' => 'user_courses', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User Course', true), array('controller' => 'user_courses', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
