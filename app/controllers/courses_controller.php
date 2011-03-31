@@ -4,7 +4,7 @@ class CoursesController extends AppController {
 	var $name = 'Courses';
 
 	function index($all=false) {
-
+		$this->Course->getCoursesData();
 		if ( !$all ) {
 			$this->paginate = array('conditions' => array('end >=' => date('Y-m-d')));
 			$this->set('all', false);

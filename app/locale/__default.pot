@@ -251,7 +251,7 @@ msgstr ""
 #: /views/users/edit.ctp:14
 #: /views/users/login.ctp:6
 msgid "Submit"
-msgstr "Lisää"
+msgstr "Lähetä"
 
 #: /plugins/full_calendar/views/event_types/add.ctp:38
 #: /plugins/full_calendar/views/event_types/edit.ctp:40
@@ -269,7 +269,7 @@ msgstr ""
 #: /plugins/full_calendar/views/events/index.ctp:86
 #: /plugins/full_calendar/views/events/view.ctp:68
 msgid "View Calendar"
-msgstr "Näytä kalenteri"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/edit.ctp:16
 #: /plugins/full_calendar/views/event_types/view.ctp:32
@@ -297,7 +297,7 @@ msgstr ""
 #: /views/users/index.ctp:33
 #: /views/users/view.ctp:102;144
 msgid "View"
-msgstr "Näytä"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/index.ctp:34
 #: /plugins/full_calendar/views/event_types/view.ctp:76
@@ -312,7 +312,7 @@ msgstr "Näytä"
 #: /views/users/index.ctp:34
 #: /views/users/view.ctp:103;145
 msgid "Edit"
-msgstr "Muokkaa"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/index.ctp:42
 #: /plugins/full_calendar/views/events/index.ctp:70
@@ -323,7 +323,7 @@ msgstr "Muokkaa"
 #: /views/user_courses/index.ctp:48
 #: /views/users/index.ctp:43
 msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
-msgstr "Sivu %page% of %pages%, näytetään %current% , merkintöjä yhteensä %count% total, alkaen %start%, päättyen %end%"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/index.ctp:47
 #: /plugins/full_calendar/views/events/index.ctp:75
@@ -334,7 +334,7 @@ msgstr "Sivu %page% of %pages%, näytetään %current% , merkintöjä yhteensä 
 #: /views/user_courses/index.ctp:53
 #: /views/users/index.ctp:48
 msgid "previous"
-msgstr "Edelliset"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/index.ctp:50
 #: /plugins/full_calendar/views/events/index.ctp:78
@@ -345,7 +345,7 @@ msgstr "Edelliset"
 #: /views/user_courses/index.ctp:56
 #: /views/users/index.ctp:51
 msgid "next"
-msgstr "Seuraavat"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/index.ctp:55
 msgid "New Event Type"
@@ -357,7 +357,7 @@ msgstr ""
 #: /plugins/full_calendar/views/events/view.ctp:67
 #: /plugins/full_calendar/views/full_calendar/index.ctp:28
 msgid "Manage Events"
-msgstr "Muokkaa tapahtumia"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/view.ctp:33
 msgid "Delete Event Type"
@@ -371,19 +371,19 @@ msgstr ""
 #: /plugins/full_calendar/views/events/view.ctp:21
 #: /views/users/view.ctp:66
 msgid "Title"
-msgstr "Otsikko"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/view.ctp:45
 #: /plugins/full_calendar/views/events/view.ctp:36
 #: /views/users/view.ctp:70
 msgid "Start"
-msgstr "Alkamispvm"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/view.ctp:46
 #: /plugins/full_calendar/views/events/view.ctp:41
 #: /views/users/view.ctp:71
 msgid "End"
-msgstr "Loppumispvm"
+msgstr ""
 
 #: /plugins/full_calendar/views/event_types/view.ctp:48
 #: /views/events/view.ctp:39
@@ -397,14 +397,14 @@ msgstr ""
 #: /plugins/full_calendar/views/events/add.ctp:16
 #: /views/events/add.ctp:4
 msgid "Add Event"
-msgstr "Lisää tapahtuma"
+msgstr ""
 
 #: /plugins/full_calendar/views/events/edit.ctp:16
 #: /plugins/full_calendar/views/events/view.ctp:65
 #: /views/events/edit.ctp:4
 #: /views/events/view.ctp:49
 msgid "Edit Event"
-msgstr "Muokkaa tapahtumaa"
+msgstr ""
 
 #: /plugins/full_calendar/views/events/edit.ctp:37
 msgid "View Event"
@@ -435,7 +435,7 @@ msgstr ""
 #: /views/users/index.ctp:59
 #: /views/users/view.ctp:54;113
 msgid "New Event"
-msgstr "Uusi tapahtuma"
+msgstr ""
 
 #: /plugins/full_calendar/views/events/view.ctp:14
 #: /views/events/view.ctp:2
@@ -493,7 +493,7 @@ msgstr ""
 #: /views/users/index.ctp:13;55
 #: /views/users/view.ctp:47;77;127
 msgid "Actions"
-msgstr "Toiminnot"
+msgstr ""
 
 #: /views/courses/add.ctp:19
 #: /views/courses/edit.ctp:23
@@ -510,20 +510,20 @@ msgstr "Toiminnot"
 #: /views/user_courses/index.ctp:65
 #: /views/user_courses/view.ctp:40
 msgid "List Courses"
-msgstr "Näytä kurssit"
+msgstr ""
 
 #: /views/courses/add.ctp:20
 #: /views/courses/edit.ctp:24
 #: /views/courses/index.ctp:65
 msgid "List Course Events"
-msgstr "Näytä kurssitapahtumat"
+msgstr ""
 
 #: /views/courses/add.ctp:21
 #: /views/courses/edit.ctp:25
 #: /views/courses/index.ctp:66
 #: /views/courses/view.ctp:154
 msgid "New Course Event"
-msgstr "Uusi kurssitapahtuma"
+msgstr ""
 
 #: /views/courses/add.ctp:22
 #: /views/courses/edit.ctp:26
@@ -536,7 +536,7 @@ msgstr "Uusi kurssitapahtuma"
 #: /views/users/index.ctp:58
 #: /views/users/view.ctp:53
 msgid "List Events"
-msgstr "Näytä tapahtumat"
+msgstr ""
 
 #: /views/courses/add.ctp:24
 #: /views/courses/edit.ctp:28
@@ -579,7 +579,7 @@ msgstr ""
 #: /views/users/index.ctp:35
 #: /views/users/view.ctp:104;146
 msgid "Delete"
-msgstr "Poista"
+msgstr ""
 
 #: /views/courses/edit.ctp:22
 #: /views/courses/index.ctp:42
@@ -600,7 +600,7 @@ msgstr "Poista"
 #: /views/users/index.ctp:35
 #: /views/users/view.ctp:50;104;146
 msgid "Are you sure you want to delete # %s?"
-msgstr "Oletko varma että haluat poistaa # %s?"
+msgstr ""
 
 #: /views/courses/index.ctp:2
 msgid "Courses"
@@ -628,80 +628,80 @@ msgstr ""
 #: /views/user_courses/index.ctp:66
 #: /views/user_courses/view.ctp:41
 msgid "New Course"
-msgstr "Uusi kurssi"
+msgstr ""
 
 #: /views/courses/view.ctp:2
 msgid "Monday"
-msgstr "Maanantai"
+msgstr ""
 
 #: /views/courses/view.ctp:2
 msgid "Tuesday"
-msgstr "Tiistai"
+msgstr ""
 
 #: /views/courses/view.ctp:2
 msgid "Wednesday"
-msgstr "Keskiviikko"
+msgstr ""
 
 #: /views/courses/view.ctp:2
 msgid "Thursday"
-msgstr "Torstai"
+msgstr ""
 
 #: /views/courses/view.ctp:2
 msgid "Friday"
-msgstr "Perjantai"
+msgstr ""
 
 #: /views/courses/view.ctp:2
 msgid "Saturday"
-msgstr "Lauantai"
+msgstr ""
 
 #: /views/courses/view.ctp:2
 msgid "Sunday"
-msgstr "Sunnuntai"
+msgstr ""
 
 #: /views/courses/view.ctp:3
 msgid "Lecture"
-msgstr "Luento"
+msgstr ""
 
 #: /views/courses/view.ctp:3
 msgid "Exercise Group"
-msgstr "Harjoitusryhmä"
+msgstr ""
 
 #: /views/courses/view.ctp:12
 msgid "Edit Course"
-msgstr "Muokkaa kurssia"
+msgstr ""
 
 #: /views/courses/view.ctp:24
 #: /views/users/view.ctp:24
 msgid "Teacher"
-msgstr "Opettaja"
+msgstr ""
 
 #: /views/courses/view.ctp:60
 msgid "Lectures"
-msgstr "Luento"
+msgstr ""
 
 #: /views/courses/view.ctp:64;100
 msgid "Event Type Name"
-msgstr "Tapahtumatyyppi"
+msgstr ""
 
 #: /views/courses/view.ctp:65;101
 msgid "Day"
-msgstr "Päivä"
+msgstr ""
 
 #: /views/courses/view.ctp:66;102
 msgid "Time"
-msgstr "Aika"
+msgstr ""
 
 #: /views/courses/view.ctp:96
 msgid "Exercise Groups"
-msgstr "Harjoitusryhmä"
+msgstr ""
 
 #: /views/courses/view.ctp:127
 msgid "Select"
-msgstr "Ilmottaudu"
+msgstr ""
 
 #: /views/courses/view.ctp:148
 msgid "Course Events"
-msgstr "Kurssin tapahtumat"
+msgstr ""
 
 #: /views/events/add.ctp:23
 #: /views/events/edit.ctp:25
@@ -741,27 +741,27 @@ msgstr ""
 #: /views/events/view.ctp:9
 #: /views/users/view.ctp:14
 msgid "Name"
-msgstr "Nimi"
+msgstr ""
 
 #: /views/events/view.ctp:14
 #: /views/training_questions/view.ctp:9
 #: /views/user_courses/view.ctp:14
 msgid "Course"
-msgstr "Kurssi"
+msgstr ""
 
 #: /views/events/view.ctp:19
 #: /views/user_courses/view.ctp:9
 #: /views/users/view.ctp:2
 msgid "User"
-msgstr "Käyttäjä"
+msgstr ""
 
 #: /views/events/view.ctp:24
 msgid "P Start"
-msgstr "Alkaen"
+msgstr ""
 
 #: /views/events/view.ctp:29
 msgid "P End"
-msgstr "Päättyy"
+msgstr ""
 
 #: /views/events/view.ctp:34
 msgid "Crated"
@@ -773,11 +773,11 @@ msgstr ""
 
 #: /views/layouts/default.ctp:53
 msgid "Not logged in"
-msgstr "Et ole kirjautunut sisään"
+msgstr ""
 
 #: /views/layouts/default.ctp:114
 msgid "Logout"
-msgstr "Kirjaudu ulos"
+msgstr ""
 
 #: /views/layouts/default.ctp:134
 msgid "CakePHP: the rapid development php framework"
@@ -876,7 +876,7 @@ msgstr ""
 
 #: /views/user_courses/add.ctp:4
 msgid "Add User Course"
-msgstr "Lisää käyttäjätapahtuma"
+msgstr ""
 
 #: /views/user_courses/add.ctp:16
 #: /views/user_courses/edit.ctp:18
@@ -886,7 +886,7 @@ msgstr "Lisää käyttäjätapahtuma"
 #: /views/users/index.ctp:60
 #: /views/users/view.ctp:55
 msgid "List User Courses"
-msgstr "Näytä omat kurssit"
+msgstr ""
 
 #: /views/user_courses/edit.ctp:4
 #: /views/user_courses/view.ctp:34
@@ -895,11 +895,11 @@ msgstr ""
 
 #: /views/user_courses/index.ctp:2
 msgid "User Courses"
-msgstr "Omat kurssit"
+msgstr ""
 
 #: /views/user_courses/index.ctp:6
 msgid "Export .csv"
-msgstr "Tallenna .csv muodossa"
+msgstr ""
 
 #: /views/user_courses/index.ctp:62
 #: /views/user_courses/view.ctp:37
@@ -933,11 +933,11 @@ msgstr ""
 
 #: /views/users/view.ctp:9
 msgid "Username"
-msgstr "Käyttäjänimi"
+msgstr ""
 
 #: /views/users/view.ctp:19
 msgid "Password"
-msgstr "Salasana"
+msgstr ""
 
 #: /views/users/view.ctp:39
 msgid "Student Id"
@@ -957,11 +957,11 @@ msgstr ""
 
 #: /views/users/view.ctp:68;124
 msgid "Course Id"
-msgstr "Kurssin ID"
+msgstr ""
 
 #: /views/users/view.ctp:69;123
 msgid "User Id"
-msgstr "KäyttäjäID"
+msgstr ""
 
 #: /views/users/view.ctp:72
 msgid "Status"
@@ -982,3 +982,4 @@ msgstr ""
 #: /webroot/test.php:88
 msgid "Debug setting does not allow access to this url."
 msgstr ""
+

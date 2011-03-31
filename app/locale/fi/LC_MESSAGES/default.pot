@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-03-25 18:46+0200\n"
+"POT-Creation-Date: 2011-03-31 13:15+0300\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,57 +14,93 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /controllers/courses_controller.php:13;33
+#: /app_controller.php:57
+msgid "Access denied"
+msgstr ""
+
+#: /controllers/course_events_controller.php:13;36
+msgid "Invalid course event"
+msgstr ""
+
+#: /controllers/course_events_controller.php:23;41
+msgid "The course event has been saved"
+msgstr ""
+
+#: /controllers/course_events_controller.php:26;44
+msgid "The course event could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/course_events_controller.php:57
+msgid "Invalid id for course event"
+msgstr ""
+
+#: /controllers/course_events_controller.php:61
+msgid "Course event deleted"
+msgstr ""
+
+#: /controllers/course_events_controller.php:64
+msgid "Course event was not deleted"
+msgstr ""
+
+#: /controllers/courses_controller.php:20;71
 msgid "Invalid course"
 msgstr ""
 
-#: /controllers/courses_controller.php:23;38
+#: /controllers/courses_controller.php:53
+msgid "New courses have been added"
+msgstr ""
+
+#: /controllers/courses_controller.php:56
+msgid "No new courses found"
+msgstr ""
+
+#: /controllers/courses_controller.php:76
 msgid "The course has been saved"
 msgstr ""
 
-#: /controllers/courses_controller.php:26;41
+#: /controllers/courses_controller.php:79
 msgid "The course could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/courses_controller.php:51
+#: /controllers/courses_controller.php:89
 msgid "Invalid id for course"
 msgstr ""
 
-#: /controllers/courses_controller.php:55
+#: /controllers/courses_controller.php:93
 msgid "Course deleted"
 msgstr ""
 
-#: /controllers/courses_controller.php:58
+#: /controllers/courses_controller.php:96
 msgid "Course was not deleted"
 msgstr ""
 
 #: /controllers/events_controller.php:13;36
-#: /plugins/full_calendar/controllers/events_controller.php:24;45
+#: /plugins/full_calendar/controllers/events_controller.php:38;60
 msgid "Invalid event"
 msgstr ""
 
 #: /controllers/events_controller.php:23;41
-#: /plugins/full_calendar/controllers/events_controller.php:34;50
+#: /plugins/full_calendar/controllers/events_controller.php:49;65
 msgid "The event has been saved"
 msgstr ""
 
 #: /controllers/events_controller.php:26;44
-#: /plugins/full_calendar/controllers/events_controller.php:37;53
+#: /plugins/full_calendar/controllers/events_controller.php:52;68
 msgid "The event could not be saved. Please, try again."
 msgstr ""
 
 #: /controllers/events_controller.php:57
-#: /plugins/full_calendar/controllers/events_controller.php:64
+#: /plugins/full_calendar/controllers/events_controller.php:79
 msgid "Invalid id for event"
 msgstr ""
 
 #: /controllers/events_controller.php:61
-#: /plugins/full_calendar/controllers/events_controller.php:68
+#: /plugins/full_calendar/controllers/events_controller.php:83
 msgid "Event deleted"
 msgstr ""
 
 #: /controllers/events_controller.php:64
-#: /plugins/full_calendar/controllers/events_controller.php:71
+#: /plugins/full_calendar/controllers/events_controller.php:86
 msgid "Event was not deleted"
 msgstr ""
 
@@ -116,52 +152,56 @@ msgstr ""
 msgid "Training question was not deleted"
 msgstr ""
 
-#: /controllers/user_events_controller.php:13;36
-msgid "Invalid user event"
+#: /controllers/user_courses_controller.php:21;46
+msgid "Invalid user course"
 msgstr ""
 
-#: /controllers/user_events_controller.php:23;41
-msgid "The user event has been saved"
+#: /controllers/user_courses_controller.php:32;51
+msgid "The user course has been saved"
 msgstr ""
 
-#: /controllers/user_events_controller.php:26;44
-msgid "The user event could not be saved. Please, try again."
+#: /controllers/user_courses_controller.php:35;54
+msgid "The user course could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/user_events_controller.php:57
-msgid "Invalid id for user event"
+#: /controllers/user_courses_controller.php:67
+msgid "Invalid id for user course"
 msgstr ""
 
-#: /controllers/user_events_controller.php:61
-msgid "User event deleted"
+#: /controllers/user_courses_controller.php:71
+msgid "User course deleted"
 msgstr ""
 
-#: /controllers/user_events_controller.php:64
-msgid "User event was not deleted"
+#: /controllers/user_courses_controller.php:74
+msgid "User course was not deleted"
 msgstr ""
 
-#: /controllers/users_controller.php:13;33
+#: /controllers/users_controller.php:17;39
 msgid "Invalid user"
 msgstr ""
 
-#: /controllers/users_controller.php:23;38
+#: /controllers/users_controller.php:27;44
 msgid "The user has been saved"
 msgstr ""
 
-#: /controllers/users_controller.php:26;41
+#: /controllers/users_controller.php:30;47
 msgid "The user could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/users_controller.php:51
+#: /controllers/users_controller.php:57
 msgid "Invalid id for user"
 msgstr ""
 
-#: /controllers/users_controller.php:55
+#: /controllers/users_controller.php:61
 msgid "User deleted"
 msgstr ""
 
-#: /controllers/users_controller.php:58
+#: /controllers/users_controller.php:64
 msgid "User was not deleted"
+msgstr ""
+
+#: /controllers/users_controller.php:72
+msgid "Logged out"
 msgstr ""
 
 #: /plugins/full_calendar/controllers/event_types_controller.php:24;44
@@ -197,40 +237,42 @@ msgstr ""
 #: /plugins/full_calendar/views/events/add.ctp:32
 #: /plugins/full_calendar/views/events/edit.ctp:33
 #: /views/courses/add.ctp:13
-#: /views/courses/edit.ctp:14
+#: /views/courses/edit.ctp:16
+#: /views/courses/view.ctp:161
 #: /views/events/add.ctp:14
 #: /views/events/edit.ctp:15
 #: /views/training_answers/add.ctp:11
 #: /views/training_answers/edit.ctp:12
 #: /views/training_questions/add.ctp:10
 #: /views/training_questions/edit.ctp:11
-#: /views/user_events/add.ctp:11
-#: /views/user_events/edit.ctp:12
-#: /views/users/add.ctp:12
-#: /views/users/edit.ctp:13
+#: /views/user_courses/add.ctp:10
+#: /views/user_courses/edit.ctp:11
+#: /views/users/add.ctp:13
+#: /views/users/edit.ctp:14
+#: /views/users/login.ctp:6
 msgid "Submit"
-msgstr ""
+msgstr "Lisää"
 
 #: /plugins/full_calendar/views/event_types/add.ctp:38
 #: /plugins/full_calendar/views/event_types/edit.ctp:40
-#: /plugins/full_calendar/views/event_types/view.ctp:32
-#: /plugins/full_calendar/views/events/index.ctp:70
+#: /plugins/full_calendar/views/event_types/view.ctp:34
+#: /plugins/full_calendar/views/events/index.ctp:85
 msgid "Manage Event Types"
 msgstr ""
 
 #: /plugins/full_calendar/views/event_types/add.ctp:39
 #: /plugins/full_calendar/views/event_types/edit.ctp:41
 #: /plugins/full_calendar/views/event_types/index.ctp:57
-#: /plugins/full_calendar/views/event_types/view.ctp:33
+#: /plugins/full_calendar/views/event_types/view.ctp:35
 #: /plugins/full_calendar/views/events/add.ctp:37
 #: /plugins/full_calendar/views/events/edit.ctp:39
-#: /plugins/full_calendar/views/events/index.ctp:71
+#: /plugins/full_calendar/views/events/index.ctp:86
 #: /plugins/full_calendar/views/events/view.ctp:68
 msgid "View Calendar"
-msgstr ""
+msgstr "Näytä kalenteri"
 
 #: /plugins/full_calendar/views/event_types/edit.ctp:16
-#: /plugins/full_calendar/views/event_types/view.ctp:30
+#: /plugins/full_calendar/views/event_types/view.ctp:32
 msgid "Edit Event Type"
 msgstr ""
 
@@ -243,67 +285,67 @@ msgid "Event Types"
 msgstr ""
 
 #: /plugins/full_calendar/views/event_types/index.ctp:33
-#: /plugins/full_calendar/views/event_types/view.ctp:65
-#: /plugins/full_calendar/views/events/index.ctp:47
-#: /views/courses/index.ctp:33
-#: /views/courses/view.ctp:94;136;180
+#: /plugins/full_calendar/views/event_types/view.ctp:75
+#: /plugins/full_calendar/views/events/index.ctp:61
+#: /views/courses/index.ctp:40
+#: /views/courses/view.ctp:80
 #: /views/events/index.ctp:37
 #: /views/training_answers/index.ctp:31
 #: /views/training_questions/index.ctp:29
 #: /views/training_questions/view.ctp:73
-#: /views/user_events/index.ctp:33
-#: /views/users/index.ctp:31
-#: /views/users/view.ctp:87;129
+#: /views/user_courses/index.ctp:38
+#: /views/users/index.ctp:33
+#: /views/users/view.ctp:102;144
 msgid "View"
-msgstr ""
+msgstr "Näytä"
 
 #: /plugins/full_calendar/views/event_types/index.ctp:34
-#: /plugins/full_calendar/views/event_types/view.ctp:66
-#: /plugins/full_calendar/views/events/index.ctp:48
-#: /views/courses/index.ctp:34
-#: /views/courses/view.ctp:95;137;181
+#: /plugins/full_calendar/views/event_types/view.ctp:76
+#: /plugins/full_calendar/views/events/index.ctp:62
+#: /views/courses/index.ctp:41
+#: /views/courses/view.ctp:81
 #: /views/events/index.ctp:38
 #: /views/training_answers/index.ctp:32
 #: /views/training_questions/index.ctp:30
 #: /views/training_questions/view.ctp:74
-#: /views/user_events/index.ctp:34
-#: /views/users/index.ctp:32
-#: /views/users/view.ctp:88;130
+#: /views/user_courses/index.ctp:39
+#: /views/users/index.ctp:34
+#: /views/users/view.ctp:103;145
 msgid "Edit"
-msgstr ""
+msgstr "Muokkaa"
 
 #: /plugins/full_calendar/views/event_types/index.ctp:42
-#: /plugins/full_calendar/views/events/index.ctp:56
-#: /views/courses/index.ctp:43
+#: /plugins/full_calendar/views/events/index.ctp:70
+#: /views/courses/index.ctp:50
 #: /views/events/index.ctp:47
 #: /views/training_answers/index.ctp:41
 #: /views/training_questions/index.ctp:39
-#: /views/user_events/index.ctp:43
-#: /views/users/index.ctp:41
+#: /views/user_courses/index.ctp:48
+#: /views/users/index.ctp:43
 msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
-msgstr ""
+msgstr "Sivu %page% of %pages%, näytetään %current% , merkintöjä yhteensä %count% total, alkaen %start%, päättyen %end%"
 
 #: /plugins/full_calendar/views/event_types/index.ctp:47
-#: /plugins/full_calendar/views/events/index.ctp:61
-#: /views/courses/index.ctp:48
+#: /plugins/full_calendar/views/events/index.ctp:75
+#: /views/courses/index.ctp:55
 #: /views/events/index.ctp:52
 #: /views/training_answers/index.ctp:46
 #: /views/training_questions/index.ctp:44
-#: /views/user_events/index.ctp:48
-#: /views/users/index.ctp:46
+#: /views/user_courses/index.ctp:53
+#: /views/users/index.ctp:48
 msgid "previous"
-msgstr ""
+msgstr "Edelliset"
 
 #: /plugins/full_calendar/views/event_types/index.ctp:50
-#: /plugins/full_calendar/views/events/index.ctp:64
-#: /views/courses/index.ctp:51
+#: /plugins/full_calendar/views/events/index.ctp:78
+#: /views/courses/index.ctp:58
 #: /views/events/index.ctp:55
 #: /views/training_answers/index.ctp:49
 #: /views/training_questions/index.ctp:47
-#: /views/user_events/index.ctp:51
-#: /views/users/index.ctp:49
+#: /views/user_courses/index.ctp:56
+#: /views/users/index.ctp:51
 msgid "next"
-msgstr ""
+msgstr "Seuraavat"
 
 #: /plugins/full_calendar/views/event_types/index.ctp:55
 msgid "New Event Type"
@@ -315,131 +357,98 @@ msgstr ""
 #: /plugins/full_calendar/views/events/view.ctp:67
 #: /plugins/full_calendar/views/full_calendar/index.ctp:28
 msgid "Manage Events"
-msgstr ""
+msgstr "Muokkaa tapahtumia"
 
-#: /plugins/full_calendar/views/event_types/view.ctp:14
-#: /plugins/full_calendar/views/events/view.ctp:16
-msgid "Event Type"
-msgstr ""
-
-#: /plugins/full_calendar/views/event_types/view.ctp:16
-#: /views/courses/view.ctp:9;67
-#: /views/events/view.ctp:9
-#: /views/users/view.ctp:14;60
-msgid "Name"
-msgstr ""
-
-#: /plugins/full_calendar/views/event_types/view.ctp:21
-msgid "Color"
-msgstr ""
-
-#: /plugins/full_calendar/views/event_types/view.ctp:31
+#: /plugins/full_calendar/views/event_types/view.ctp:33
 msgid "Delete Event Type"
 msgstr ""
 
-#: /plugins/full_calendar/views/event_types/view.ctp:31
+#: /plugins/full_calendar/views/event_types/view.ctp:33
 msgid "Are you sure you want to delete %s?"
 msgstr ""
 
-#: /plugins/full_calendar/views/event_types/view.ctp:37
-#: /views/courses/view.ctp:62
-#: /views/users/view.ctp:55
-msgid "Related Events"
-msgstr ""
-
-#: /plugins/full_calendar/views/event_types/view.ctp:41
-#: /plugins/full_calendar/views/events/view.ctp:21
-msgid "Title"
-msgstr ""
-
-#: /plugins/full_calendar/views/event_types/view.ctp:42
-#: /plugins/full_calendar/views/events/view.ctp:31
-msgid "Status"
-msgstr ""
-
 #: /plugins/full_calendar/views/event_types/view.ctp:43
-#: /plugins/full_calendar/views/events/view.ctp:36
-msgid "Start"
-msgstr ""
-
-#: /plugins/full_calendar/views/event_types/view.ctp:44
-#: /plugins/full_calendar/views/events/view.ctp:41
-msgid "End"
-msgstr ""
+#: /plugins/full_calendar/views/events/view.ctp:21
+#: /views/users/view.ctp:66
+msgid "Title"
+msgstr "Otsikko"
 
 #: /plugins/full_calendar/views/event_types/view.ctp:45
-#: /plugins/full_calendar/views/events/view.ctp:46
-msgid "All Day"
-msgstr ""
+#: /plugins/full_calendar/views/events/view.ctp:36
+#: /views/users/view.ctp:70
+msgid "Start"
+msgstr "Alkamispvm"
 
 #: /plugins/full_calendar/views/event_types/view.ctp:46
-#: /plugins/full_calendar/views/events/view.ctp:56
-#: /views/courses/view.ctp:34;73;118;161
+#: /plugins/full_calendar/views/events/view.ctp:41
+#: /views/users/view.ctp:71
+msgid "End"
+msgstr "Loppumispvm"
+
+#: /plugins/full_calendar/views/event_types/view.ctp:48
 #: /views/events/view.ctp:39
 #: /views/training_answers/view.ctp:29
 #: /views/training_questions/view.ctp:24;54
-#: /views/user_events/view.ctp:29
-#: /views/users/view.ctp:34;66;111
+#: /views/user_courses/view.ctp:24
+#: /views/users/view.ctp:34;76;126
 msgid "Modified"
 msgstr ""
 
 #: /plugins/full_calendar/views/events/add.ctp:16
 #: /views/events/add.ctp:4
 msgid "Add Event"
-msgstr ""
+msgstr "Lisää tapahtuma"
 
 #: /plugins/full_calendar/views/events/edit.ctp:16
 #: /plugins/full_calendar/views/events/view.ctp:65
 #: /views/events/edit.ctp:4
 #: /views/events/view.ctp:49
 msgid "Edit Event"
-msgstr ""
+msgstr "Muokkaa tapahtumaa"
 
 #: /plugins/full_calendar/views/events/edit.ctp:37
 msgid "View Event"
 msgstr ""
 
-#: /plugins/full_calendar/views/events/index.ctp:14
+#: /plugins/full_calendar/views/events/index.ctp:15
 #: /views/events/index.ctp:2
 msgid "Events"
 msgstr ""
 
-#: /plugins/full_calendar/views/events/index.ctp:69
+#: /plugins/full_calendar/views/events/index.ctp:18
+msgid "New event"
+msgstr ""
+
+#: /plugins/full_calendar/views/events/index.ctp:19
+msgid "Export as .csv"
+msgstr ""
+
+#: /plugins/full_calendar/views/events/index.ctp:84
 #: /plugins/full_calendar/views/full_calendar/index.ctp:27
-#: /views/courses/add.ctp:21
-#: /views/courses/edit.ctp:23
-#: /views/courses/index.ctp:59
-#: /views/courses/view.ctp:54;105
+#: /views/courses/add.ctp:23
+#: /views/courses/edit.ctp:27
+#: /views/courses/index.ctp:68
 #: /views/events/index.ctp:61
 #: /views/events/view.ctp:52
-#: /views/user_events/add.ctp:19
-#: /views/user_events/edit.ctp:21
-#: /views/user_events/index.ctp:59
-#: /views/user_events/view.ctp:44
-#: /views/users/add.ctp:20
-#: /views/users/edit.ctp:22
-#: /views/users/index.ctp:57
-#: /views/users/view.ctp:49;98
+#: /views/users/add.ctp:21
+#: /views/users/edit.ctp:23
+#: /views/users/index.ctp:59
+#: /views/users/view.ctp:54;113
 msgid "New Event"
-msgstr ""
+msgstr "Uusi tapahtuma"
 
 #: /plugins/full_calendar/views/events/view.ctp:14
 #: /views/events/view.ctp:2
-#: /views/user_events/view.ctp:14
 msgid "Event"
 msgstr ""
 
-#: /plugins/full_calendar/views/events/view.ctp:26
-msgid "Details"
+#: /plugins/full_calendar/views/events/view.ctp:16
+msgid "Event Type"
 msgstr ""
 
-#: /plugins/full_calendar/views/events/view.ctp:51
-#: /views/courses/view.ctp:39;117;160
-#: /views/training_answers/view.ctp:24
-#: /views/training_questions/view.ctp:19;53
-#: /views/user_events/view.ctp:24
-#: /views/users/view.ctp:29;110
-msgid "Created"
+#: /plugins/full_calendar/views/events/view.ctp:26
+#: /views/users/view.ctp:67
+msgid "Details"
 msgstr ""
 
 #: /plugins/full_calendar/views/events/view.ctp:66
@@ -460,9 +469,9 @@ msgid "Add Course"
 msgstr ""
 
 #: /views/courses/add.ctp:16
-#: /views/courses/edit.ctp:17
-#: /views/courses/index.ctp:13;55
-#: /views/courses/view.ctp:47;74;119;162
+#: /views/courses/edit.ctp:19
+#: /views/courses/index.ctp:5;23;62
+#: /views/courses/view.ctp:67;103
 #: /views/events/add.ctp:17
 #: /views/events/edit.ctp:18
 #: /views/events/index.ctp:13;59
@@ -475,20 +484,19 @@ msgstr ""
 #: /views/training_questions/edit.ctp:14
 #: /views/training_questions/index.ctp:10;51
 #: /views/training_questions/view.ctp:32;55
-#: /views/user_events/add.ctp:14
-#: /views/user_events/edit.ctp:15
-#: /views/user_events/index.ctp:11;55
-#: /views/user_events/view.ctp:37
-#: /views/users/add.ctp:15
-#: /views/users/edit.ctp:16
-#: /views/users/index.ctp:12;53
-#: /views/users/view.ctp:42;67;112
+#: /views/user_courses/add.ctp:13
+#: /views/user_courses/edit.ctp:14
+#: /views/user_courses/index.ctp:17;60
+#: /views/user_courses/view.ctp:32
+#: /views/users/add.ctp:16
+#: /views/users/edit.ctp:17
+#: /views/users/index.ctp:13;55
+#: /views/users/view.ctp:47;77;127
 msgid "Actions"
-msgstr ""
+msgstr "Toiminnot"
 
 #: /views/courses/add.ctp:19
-#: /views/courses/edit.ctp:21
-#: /views/courses/view.ctp:51
+#: /views/courses/edit.ctp:23
 #: /views/events/add.ctp:21
 #: /views/events/edit.ctp:23
 #: /views/events/index.ctp:62
@@ -497,31 +505,42 @@ msgstr ""
 #: /views/training_questions/edit.ctp:19
 #: /views/training_questions/index.ctp:54
 #: /views/training_questions/view.ctp:38
+#: /views/user_courses/add.ctp:19
+#: /views/user_courses/edit.ctp:21
+#: /views/user_courses/index.ctp:65
+#: /views/user_courses/view.ctp:40
 msgid "List Courses"
-msgstr ""
+msgstr "Näytä kurssit"
 
 #: /views/courses/add.ctp:20
-#: /views/courses/edit.ctp:22
-#: /views/courses/index.ctp:58
-#: /views/courses/view.ctp:53
+#: /views/courses/edit.ctp:24
+#: /views/courses/index.ctp:65
+msgid "List Course Events"
+msgstr "Näytä kurssitapahtumat"
+
+#: /views/courses/add.ctp:21
+#: /views/courses/edit.ctp:25
+#: /views/courses/index.ctp:66
+#: /views/courses/view.ctp:154
+msgid "New Course Event"
+msgstr "Uusi kurssitapahtuma"
+
+#: /views/courses/add.ctp:22
+#: /views/courses/edit.ctp:26
+#: /views/courses/index.ctp:67
 #: /views/events/add.ctp:20
 #: /views/events/edit.ctp:22
 #: /views/events/view.ctp:51
-#: /views/user_events/add.ctp:18
-#: /views/user_events/edit.ctp:20
-#: /views/user_events/index.ctp:58
-#: /views/user_events/view.ctp:43
-#: /views/users/add.ctp:19
-#: /views/users/edit.ctp:21
-#: /views/users/index.ctp:56
-#: /views/users/view.ctp:48
+#: /views/users/add.ctp:20
+#: /views/users/edit.ctp:22
+#: /views/users/index.ctp:58
+#: /views/users/view.ctp:53
 msgid "List Events"
-msgstr ""
+msgstr "Näytä tapahtumat"
 
-#: /views/courses/add.ctp:22
-#: /views/courses/edit.ctp:24
-#: /views/courses/index.ctp:60
-#: /views/courses/view.ctp:55
+#: /views/courses/add.ctp:24
+#: /views/courses/edit.ctp:28
+#: /views/courses/index.ctp:69
 #: /views/training_answers/add.ctp:18
 #: /views/training_answers/edit.ctp:20
 #: /views/training_answers/index.ctp:56
@@ -532,10 +551,9 @@ msgstr ""
 msgid "List Training Questions"
 msgstr ""
 
-#: /views/courses/add.ctp:23
-#: /views/courses/edit.ctp:25
-#: /views/courses/index.ctp:61
-#: /views/courses/view.ctp:56;147
+#: /views/courses/add.ctp:25
+#: /views/courses/edit.ctp:29
+#: /views/courses/index.ctp:70
 #: /views/training_answers/add.ctp:19
 #: /views/training_answers/edit.ctp:21
 #: /views/training_answers/index.ctp:57
@@ -545,41 +563,9 @@ msgstr ""
 msgid "New Training Question"
 msgstr ""
 
-#: /views/courses/add.ctp:24
-#: /views/courses/edit.ctp:26
-#: /views/courses/index.ctp:62
-#: /views/courses/view.ctp:57
-#: /views/user_events/add.ctp:17
-#: /views/user_events/edit.ctp:19
-#: /views/user_events/view.ctp:41
-#: /views/users/add.ctp:21
-#: /views/users/edit.ctp:23
-#: /views/users/index.ctp:58
-#: /views/users/view.ctp:50
-msgid "List User Events"
-msgstr ""
-
-#: /views/courses/add.ctp:25
-#: /views/courses/edit.ctp:27
-#: /views/courses/index.ctp:63
-#: /views/courses/view.ctp:58;191
-#: /views/user_events/index.ctp:57
-#: /views/user_events/view.ctp:42
-#: /views/users/add.ctp:22
-#: /views/users/edit.ctp:24
-#: /views/users/index.ctp:59
-#: /views/users/view.ctp:51;140
-msgid "New User Event"
-msgstr ""
-
-#: /views/courses/edit.ctp:4
-#: /views/courses/view.ctp:49
-msgid "Edit Course"
-msgstr ""
-
-#: /views/courses/edit.ctp:20
-#: /views/courses/index.ctp:35
-#: /views/courses/view.ctp:96;138;182
+#: /views/courses/edit.ctp:22
+#: /views/courses/index.ctp:42
+#: /views/courses/view.ctp:82
 #: /views/events/edit.ctp:21
 #: /views/events/index.ctp:39
 #: /views/training_answers/edit.ctp:18
@@ -587,17 +573,17 @@ msgstr ""
 #: /views/training_questions/edit.ctp:17
 #: /views/training_questions/index.ctp:31
 #: /views/training_questions/view.ctp:75
-#: /views/user_events/edit.ctp:18
-#: /views/user_events/index.ctp:35
-#: /views/users/edit.ctp:19
-#: /views/users/index.ctp:33
-#: /views/users/view.ctp:89;131
+#: /views/user_courses/edit.ctp:17
+#: /views/user_courses/index.ctp:40
+#: /views/users/edit.ctp:20
+#: /views/users/index.ctp:35
+#: /views/users/view.ctp:104;146
 msgid "Delete"
-msgstr ""
+msgstr "Poista"
 
-#: /views/courses/edit.ctp:20
-#: /views/courses/index.ctp:35
-#: /views/courses/view.ctp:50;96;138;182
+#: /views/courses/edit.ctp:22
+#: /views/courses/index.ctp:42
+#: /views/courses/view.ctp:82
 #: /views/events/edit.ctp:21
 #: /views/events/index.ctp:39
 #: /views/events/view.ctp:50
@@ -607,21 +593,28 @@ msgstr ""
 #: /views/training_questions/edit.ctp:17
 #: /views/training_questions/index.ctp:31
 #: /views/training_questions/view.ctp:35;75
-#: /views/user_events/edit.ctp:18
-#: /views/user_events/index.ctp:35
-#: /views/user_events/view.ctp:40
-#: /views/users/edit.ctp:19
-#: /views/users/index.ctp:33
-#: /views/users/view.ctp:45;89;131
+#: /views/user_courses/edit.ctp:17
+#: /views/user_courses/index.ctp:40
+#: /views/user_courses/view.ctp:35
+#: /views/users/edit.ctp:20
+#: /views/users/index.ctp:35
+#: /views/users/view.ctp:50;104;146
 msgid "Are you sure you want to delete # %s?"
-msgstr ""
+msgstr "Oletko varma että haluat poistaa # %s?"
 
 #: /views/courses/index.ctp:2
 msgid "Courses"
 msgstr ""
 
-#: /views/courses/index.ctp:57
-#: /views/courses/view.ctp:52
+#: /views/courses/index.ctp:9
+msgid "Current Courses"
+msgstr ""
+
+#: /views/courses/index.ctp:10
+msgid "All Courses"
+msgstr ""
+
+#: /views/courses/index.ctp:64
 #: /views/events/add.ctp:22
 #: /views/events/edit.ctp:24
 #: /views/events/index.ctp:63
@@ -630,96 +623,97 @@ msgstr ""
 #: /views/training_questions/edit.ctp:20
 #: /views/training_questions/index.ctp:55
 #: /views/training_questions/view.ctp:39
+#: /views/user_courses/add.ctp:20
+#: /views/user_courses/edit.ctp:22
+#: /views/user_courses/index.ctp:66
+#: /views/user_courses/view.ctp:41
 msgid "New Course"
-msgstr ""
+msgstr "Uusi kurssi"
 
 #: /views/courses/view.ctp:2
-#: /views/events/view.ctp:14
-#: /views/training_questions/view.ctp:9
-msgid "Course"
-msgstr ""
+msgid "Monday"
+msgstr "Maanantai"
 
-#: /views/courses/view.ctp:4;66;114;156
-#: /views/events/view.ctp:4
-#: /views/training_answers/view.ctp:4
-#: /views/training_questions/view.ctp:4;49
-#: /views/user_events/view.ctp:4
-#: /views/users/view.ctp:4;59;107
-msgid "Id"
-msgstr ""
+#: /views/courses/view.ctp:2
+msgid "Tuesday"
+msgstr "Tiistai"
 
-#: /views/courses/view.ctp:14
+#: /views/courses/view.ctp:2
+msgid "Wednesday"
+msgstr "Keskiviikko"
+
+#: /views/courses/view.ctp:2
+msgid "Thursday"
+msgstr "Torstai"
+
+#: /views/courses/view.ctp:2
+msgid "Friday"
+msgstr "Perjantai"
+
+#: /views/courses/view.ctp:2
+msgid "Saturday"
+msgstr "Lauantai"
+
+#: /views/courses/view.ctp:2
+msgid "Sunday"
+msgstr "Sunnuntai"
+
+#: /views/courses/view.ctp:3
+msgid "Lecture"
+msgstr "Luento"
+
+#: /views/courses/view.ctp:3
+msgid "Exercise Group"
+msgstr "Harjoitusryhmä"
+
+#: /views/courses/view.ctp:12
+msgid "Edit Course"
+msgstr "Muokkaa kurssia"
+
+#: /views/courses/view.ctp:24
 #: /views/users/view.ctp:24
 msgid "Teacher"
-msgstr ""
+msgstr "Opettaja"
 
-#: /views/courses/view.ctp:19
-msgid "Description"
-msgstr ""
+#: /views/courses/view.ctp:60
+msgid "Lectures"
+msgstr "Luento"
 
-#: /views/courses/view.ctp:24;70
-#: /views/events/view.ctp:24
-#: /views/users/view.ctp:63
-msgid "P Start"
-msgstr ""
+#: /views/courses/view.ctp:64;100
+msgid "Event Type Name"
+msgstr "Tapahtumatyyppi"
 
-#: /views/courses/view.ctp:29;71
-#: /views/events/view.ctp:29
-#: /views/users/view.ctp:64
-msgid "P End"
-msgstr ""
+#: /views/courses/view.ctp:65;101
+msgid "Day"
+msgstr "Päivä"
 
-#: /views/courses/view.ctp:50
-msgid "Delete Course"
-msgstr ""
+#: /views/courses/view.ctp:66;102
+msgid "Time"
+msgstr "Aika"
 
-#: /views/courses/view.ctp:68;115;157
-#: /views/user_events/view.ctp:9
-#: /views/users/view.ctp:61
-msgid "Course Id"
-msgstr ""
+#: /views/courses/view.ctp:96
+msgid "Exercise Groups"
+msgstr "Harjoitusryhmä"
 
-#: /views/courses/view.ctp:69;159
-#: /views/users/view.ctp:62;109
-msgid "User Id"
-msgstr ""
+#: /views/courses/view.ctp:127
+msgid "Select"
+msgstr "Ilmottaudu"
 
-#: /views/courses/view.ctp:72
-#: /views/events/view.ctp:34
-#: /views/users/view.ctp:65
-msgid "Crated"
-msgstr ""
-
-#: /views/courses/view.ctp:110
-msgid "Related Training Questions"
-msgstr ""
-
-#: /views/courses/view.ctp:116
-#: /views/training_questions/view.ctp:14
-msgid "Question"
-msgstr ""
-
-#: /views/courses/view.ctp:152
-#: /views/users/view.ctp:103
-msgid "Related User Events"
-msgstr ""
-
-#: /views/courses/view.ctp:158
-#: /views/users/view.ctp:108
-msgid "Event Id"
-msgstr ""
+#: /views/courses/view.ctp:148
+msgid "Course Events"
+msgstr "Kurssin tapahtumat"
 
 #: /views/events/add.ctp:23
 #: /views/events/edit.ctp:25
 #: /views/events/index.ctp:64
 #: /views/events/view.ctp:55
-#: /views/user_events/add.ctp:20
-#: /views/user_events/edit.ctp:22
-#: /views/user_events/index.ctp:60
-#: /views/user_events/view.ctp:45
-#: /views/users/add.ctp:18
-#: /views/users/edit.ctp:20
-#: /views/users/view.ctp:46
+#: /views/user_courses/add.ctp:17
+#: /views/user_courses/edit.ctp:19
+#: /views/user_courses/index.ctp:63
+#: /views/user_courses/view.ctp:38
+#: /views/users/add.ctp:19
+#: /views/users/edit.ctp:21
+#: /views/users/view.ctp:51
 msgid "List Users"
 msgstr ""
 
@@ -727,26 +721,65 @@ msgstr ""
 #: /views/events/edit.ctp:26
 #: /views/events/index.ctp:65
 #: /views/events/view.ctp:56
-#: /views/user_events/add.ctp:21
-#: /views/user_events/edit.ctp:23
-#: /views/user_events/index.ctp:61
-#: /views/user_events/view.ctp:46
-#: /views/users/index.ctp:55
-#: /views/users/view.ctp:47
+#: /views/user_courses/add.ctp:18
+#: /views/user_courses/edit.ctp:20
+#: /views/user_courses/index.ctp:64
+#: /views/user_courses/view.ctp:39
+#: /views/users/index.ctp:57
+#: /views/users/view.ctp:52
 msgid "New User"
 msgstr ""
 
+#: /views/events/view.ctp:4
+#: /views/training_answers/view.ctp:4
+#: /views/training_questions/view.ctp:4;49
+#: /views/user_courses/view.ctp:4
+#: /views/users/view.ctp:4;64;122
+msgid "Id"
+msgstr ""
+
+#: /views/events/view.ctp:9
+#: /views/users/view.ctp:14
+msgid "Name"
+msgstr "Nimi"
+
+#: /views/events/view.ctp:14
+#: /views/training_questions/view.ctp:9
+#: /views/user_courses/view.ctp:14
+msgid "Course"
+msgstr "Kurssi"
+
 #: /views/events/view.ctp:19
-#: /views/user_events/view.ctp:19
+#: /views/user_courses/view.ctp:9
 #: /views/users/view.ctp:2
 msgid "User"
+msgstr "Käyttäjä"
+
+#: /views/events/view.ctp:24
+msgid "P Start"
+msgstr "Alkaen"
+
+#: /views/events/view.ctp:29
+msgid "P End"
+msgstr "Päättyy"
+
+#: /views/events/view.ctp:34
+msgid "Crated"
 msgstr ""
 
 #: /views/layouts/default.ctp:25
-msgid "IDDQD"
+msgid "IDDQD Kalenteri"
 msgstr ""
 
-#: /views/layouts/default.ctp:111
+#: /views/layouts/default.ctp:53
+msgid "Not logged in"
+msgstr "Et ole kirjautunut sisään"
+
+#: /views/layouts/default.ctp:114
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+#: /views/layouts/default.ctp:134
 msgid "CakePHP: the rapid development php framework"
 msgstr ""
 
@@ -801,6 +834,13 @@ msgstr ""
 msgid "Correct"
 msgstr ""
 
+#: /views/training_answers/view.ctp:24
+#: /views/training_questions/view.ctp:19;53
+#: /views/user_courses/view.ctp:19
+#: /views/users/view.ctp:29;75;125
+msgid "Created"
+msgstr ""
+
 #: /views/training_answers/view.ctp:40
 msgid "Delete Training Answer"
 msgstr ""
@@ -818,6 +858,10 @@ msgstr ""
 msgid "Training Questions"
 msgstr ""
 
+#: /views/training_questions/view.ctp:14
+msgid "Question"
+msgstr ""
+
 #: /views/training_questions/view.ctp:35
 msgid "Delete Training Question"
 msgstr ""
@@ -830,25 +874,48 @@ msgstr ""
 msgid "Question Id"
 msgstr ""
 
-#: /views/user_events/add.ctp:4
-msgid "Add User Event"
+#: /views/user_courses/add.ctp:4
+msgid "Add User Course"
+msgstr "Lisää käyttäjätapahtuma"
+
+#: /views/user_courses/add.ctp:16
+#: /views/user_courses/edit.ctp:18
+#: /views/user_courses/view.ctp:36
+#: /views/users/add.ctp:22
+#: /views/users/edit.ctp:24
+#: /views/users/index.ctp:60
+#: /views/users/view.ctp:55
+msgid "List User Courses"
+msgstr "Näytä omat kurssit"
+
+#: /views/user_courses/edit.ctp:4
+#: /views/user_courses/view.ctp:34
+msgid "Edit User Course"
 msgstr ""
 
-#: /views/user_events/edit.ctp:4
-#: /views/user_events/view.ctp:39
-msgid "Edit User Event"
+#: /views/user_courses/index.ctp:2
+msgid "User Courses"
+msgstr "Omat kurssit"
+
+#: /views/user_courses/index.ctp:6
+msgid "Export .csv"
+msgstr "Tallenna .csv muodossa"
+
+#: /views/user_courses/index.ctp:62
+#: /views/user_courses/view.ctp:37
+#: /views/users/add.ctp:23
+#: /views/users/edit.ctp:25
+#: /views/users/index.ctp:61
+#: /views/users/view.ctp:56;155
+msgid "New User Course"
 msgstr ""
 
-#: /views/user_events/index.ctp:2
-msgid "User Events"
+#: /views/user_courses/view.ctp:2
+msgid "User Course"
 msgstr ""
 
-#: /views/user_events/view.ctp:2
-msgid "User Event"
-msgstr ""
-
-#: /views/user_events/view.ctp:40
-msgid "Delete User Event"
+#: /views/user_courses/view.ctp:35
+msgid "Delete User Course"
 msgstr ""
 
 #: /views/users/add.ctp:4
@@ -856,7 +923,7 @@ msgid "Add User"
 msgstr ""
 
 #: /views/users/edit.ctp:4
-#: /views/users/view.ctp:44
+#: /views/users/view.ctp:49
 msgid "Edit User"
 msgstr ""
 
@@ -866,17 +933,52 @@ msgstr ""
 
 #: /views/users/view.ctp:9
 msgid "Username"
-msgstr ""
+msgstr "Käyttäjänimi"
 
 #: /views/users/view.ctp:19
 msgid "Password"
+msgstr "Salasana"
+
+#: /views/users/view.ctp:39
+msgid "Student Id"
 msgstr ""
 
-#: /views/users/view.ctp:45
+#: /views/users/view.ctp:50
 msgid "Delete User"
+msgstr ""
+
+#: /views/users/view.ctp:60
+msgid "Related Events"
+msgstr ""
+
+#: /views/users/view.ctp:65
+msgid "Event Type Id"
+msgstr ""
+
+#: /views/users/view.ctp:68;124
+msgid "Course Id"
+msgstr "Kurssin ID"
+
+#: /views/users/view.ctp:69;123
+msgid "User Id"
+msgstr "KäyttäjäID"
+
+#: /views/users/view.ctp:72
+msgid "Status"
+msgstr ""
+
+#: /views/users/view.ctp:73
+msgid "All Day"
+msgstr ""
+
+#: /views/users/view.ctp:74
+msgid "Active"
+msgstr ""
+
+#: /views/users/view.ctp:118
+msgid "Related User Courses"
 msgstr ""
 
 #: /webroot/test.php:88
 msgid "Debug setting does not allow access to this url."
 msgstr ""
-

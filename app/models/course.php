@@ -73,6 +73,18 @@ function getCoursesData() {
 			);
 			$this->save();
 			
+			$this->CourseEvent->create(
+				array(
+					'course_id' => $this->id,
+					'event_type_id' => 2,
+					'name' => 'Jono',
+					'day' => null,
+					'start' => null, 
+					'end' => null
+				)
+			);
+			$this->CourseEvent->save();
+			
 			$new_courses++;
 		}
 	}

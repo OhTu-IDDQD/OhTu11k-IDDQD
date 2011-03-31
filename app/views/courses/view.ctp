@@ -8,6 +8,7 @@ $event_types = array('1' => __('Lecture', true), 2 => __('Exercise Group', true)
 <div class="courses view">
 <h2><?php  __($course['Course']['name']);?> (<?php echo $course['Course']['id']; ?>)</h2>
 <?php
+	if ( $this->Session->read('Auth.User.teacher') == 1 ) {
 	echo $html->link(
 		__('Edit Course', true), 
 		array(
@@ -17,6 +18,7 @@ $event_types = array('1' => __('Lecture', true), 2 => __('Exercise Group', true)
 			$course['Course']['id']
 		)
 	);
+	}
 	echo "<div>".date('d.m.Y', strtotime($course['Course']['start']))." - ".date('d.m.Y', strtotime($course['Course']['end']))."</div>\n";
 
 
@@ -111,9 +113,14 @@ if ( !empty($exercise_groups) ) {
 		if ( $i++ % 2 == 0 ) echo "<tr class='altrow'>";
 		else echo "<tr>";
 
-		echo "<td>".$event_types[$exercise_group['event_type_id']]."</td>";
-		echo "<td>".$days[$exercise_group['day']]."</td>";
-		echo "<td>".date('H:i', strtotime($exercise_group['start']))." - ".date('H:i', strtotime($exercise_group['end']))."</td>";
+		if ( $exercise_group['name'] != NULL ) echo "<td>".$exercise_group['name']."</td>\n";
+		else echo "<td>".$event_types[$exercise_group['event_type_id']]."</td>";
+
+		if ( !empty($exercise_group['day']) ) echo "<td>".$days[$exercise_group['day']]."</td>";
+		else echo "<td></td>\n";
+
+		if ( $exercise_group['start'] == NULL || $exercise_group['start'] == NULL) echo "<td></td>\n";
+		else echo "<td>".date('H:i', strtotime($exercise_group['start']))." - ".date('H:i', strtotime($exercise_group['end']))."</td>";
 		echo "<td>";
 
 		echo $form->create('UserCourse', array('action' => 'add'));
@@ -138,7 +145,9 @@ if ( !empty($exercise_groups) ) {
 
 ?>
 
-
+<?php
+	if ( $this->Session->read('Auth.User.teacher') == 1 ) {
+?>
 <div class='related'>
 	<h3><?php __('Course Events');?></h3>
 
@@ -158,6 +167,9 @@ if ( !empty($exercise_groups) ) {
 	</div>
 </div>
 
+<?php
+}
+?>
 
 <?php /*
 	<?php if (!empty($course['CourseEvent'])):?>

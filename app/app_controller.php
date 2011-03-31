@@ -46,6 +46,9 @@ var $components = array('Auth', 'Session', 'RequestHandler');
 	//var $uses = array('User');
 
 function beforeFilter() {
+	$this->Session->write('Config.language', 'fi');
+
+	//die(pr($this->Session->read()));
 	 //Configure AuthComponent
 	$this->Auth->authorize = 'controller';
 	//$this->Auth->actionPath = 'controllers/';
@@ -61,7 +64,6 @@ function beforeFilter() {
 
 	//$this->Auth->allow('*');
 	//$this->Auth->allow('pages');
-
 
 }
 

@@ -67,6 +67,7 @@ class UserCoursesController extends AppController {
 			$this->Session->setFlash(__('Invalid id for user course', true));
 			$this->redirect(array('action'=>'index'));
 		}
+
 		if ($this->UserCourse->delete($id)) {
 			$this->Session->setFlash(__('User course deleted', true));
 			$this->redirect(array('action'=>'index'));

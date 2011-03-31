@@ -1,5 +1,5 @@
 <?php
-/* Events Test cases generated on: 2011-03-25 12:14:23 : 1301048063*/
+/* Events Test cases generated on: 2011-03-31 14:18:22 : 1301570302*/
 App::import('Controller', 'Events');
 
 class TestEventsController extends EventsController {
@@ -11,7 +11,7 @@ class TestEventsController extends EventsController {
 }
 
 class EventsControllerTestCase extends CakeTestCase {
-	var $fixtures = array('app.event', 'app.course', 'app.training_question', 'app.training_answer', 'app.user', 'app.user_event');
+	var $fixtures = array('app.event', 'app.course', 'app.course_event', 'app.event_type', 'app.training_question', 'app.training_answer', 'app.user', 'app.user_course');
 
 	function startTest() {
 		$this->Events =& new TestEventsController();

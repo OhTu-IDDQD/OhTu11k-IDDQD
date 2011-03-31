@@ -4,8 +4,6 @@
 <div class="">
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Update Courses', true), array('action' => 'add')); ?></li>
-
 <?php
 
 	if ( $all ) echo $this->Html->link(__('Current Courses', true), array('action' => 'index'));
@@ -49,7 +47,7 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%', true)
+	'format' => __('Page %page% of %pages%', true)
 	));
 	?>	</p>
 

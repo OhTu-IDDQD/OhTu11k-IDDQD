@@ -1,5 +1,5 @@
 <?php
-/* User Fixture generated on: 2011-03-25 12:06:27 : 1301047587 */
+/* User Fixture generated on: 2011-03-31 14:25:29 : 1301570729 */
 class UserFixture extends CakeTestFixture {
 	var $name = 'User';
 
@@ -11,6 +11,7 @@ class UserFixture extends CakeTestFixture {
 		'teacher' => array('type' => 'boolean', 'null' => true, 'default' => NULL),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
+		'student_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 10),
 		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),
 		'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB')
 	);
@@ -22,8 +23,9 @@ class UserFixture extends CakeTestFixture {
 			'name' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'teacher' => 1,
-			'created' => '2011-03-25 12:06:27',
-			'modified' => '2011-03-25 12:06:27'
+			'created' => '2011-03-31 14:25:29',
+			'modified' => '2011-03-31 14:25:29',
+			'student_id' => 1
 		),
 	);
 }

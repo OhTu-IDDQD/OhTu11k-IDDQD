@@ -1,5 +1,5 @@
 <?php
-/* Course Fixture generated on: 2011-03-29 20:09:52 : 1301418592 */
+/* Course Fixture generated on: 2011-03-31 14:22:22 : 1301570542 */
 class CourseFixture extends CakeTestFixture {
 	var $name = 'Course';
 
@@ -22,10 +22,10 @@ class CourseFixture extends CakeTestFixture {
 			'name' => 'Lorem ipsum dolor sit amet',
 			'teacher' => 'Lorem ipsum dolor sit amet',
 			'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'start' => '2011-03-29',
-			'end' => '2011-03-29',
-			'modified' => '2011-03-29 20:09:52',
-			'created' => '2011-03-29 20:09:52'
+			'start' => '2011-03-31',
+			'end' => '2011-03-31',
+			'modified' => '2011-03-31 14:22:22',
+			'created' => '2011-03-31 14:22:22'
 		),
 	);
 }

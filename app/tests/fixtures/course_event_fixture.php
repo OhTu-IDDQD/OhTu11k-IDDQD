@@ -1,5 +1,5 @@
 <?php
-/* CourseEvent Fixture generated on: 2011-03-29 20:13:00 : 1301418780 */
+/* CourseEvent Fixture generated on: 2011-03-31 11:15:57 : 1301559357 */
 class CourseEventFixture extends CakeTestFixture {
 	var $name = 'CourseEvent';
 
@@ -22,10 +22,10 @@ class CourseEventFixture extends CakeTestFixture {
 			'course_id' => 1,
 			'event_type_id' => 1,
 			'day' => 1,
-			'start' => '20:13:00',
-			'end' => '20:13:00',
-			'created' => '2011-03-29 20:13:00',
-			'modified' => '2011-03-29 20:13:00'
+			'start' => '11:15:57',
+			'end' => '11:15:57',
+			'created' => '2011-03-31 11:15:57',
+			'modified' => '2011-03-31 11:15:57'
 		),
 	);
 }

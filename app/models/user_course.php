@@ -69,6 +69,8 @@ class UserCourse extends AppModel {
 				'Event.course_id' => $data['UserCourse']['course_id']
 			)
 		);
+		
+		return true;
 	}
 }
 ?>
