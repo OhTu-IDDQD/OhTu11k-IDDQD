@@ -46,6 +46,8 @@
 
 <?php
 	echo "<td>".date('Y-m-d H:i', strtotime($event['Event']['start']))."-".date('H:i', strtotime($event['Event']['end']))."</td>\n";
+
+	echo "<td>".$this->Html->link(__('Poista', true), array('action' => 'delete', $event['Event']['id']))."</td>";
 ?>
 
 

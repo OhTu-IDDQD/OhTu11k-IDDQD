@@ -161,6 +161,8 @@ if ( !empty($exercise_groups) ) {
 			echo $form->input('day', array('options' => $days));
 			echo $form->input('start', array('timeFormat' => 24));
 			echo $form->input('end', array('timeFormat' => 24));
+			echo $form->input('start_date', array());
+			echo $form->input('end_date', array());
 			echo "</fieldset>\n";
 			echo $form->end(__('Submit', true));
 		?>

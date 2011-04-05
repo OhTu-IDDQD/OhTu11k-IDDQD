@@ -96,23 +96,38 @@ function getEvents($course_id) {
 	$course = $this->findById($course_id);
 	$events = $this->CourseEvent->find('all', array('conditions' => array('CourseEvent.course_id' => $course_id), 'contain' => array()));
 	
-	$start = strtotime($course['Course']['start']);
-	$end = strtotime($course['Course']['end']);
+	//$start = strtotime($course['Course']['start']);
+	//$end = strtotime($course['Course']['end']);
 	$events = array();
 	
 	$d_count = 0;
-	$day = date('N',$start);
+	$day = date('N',strtotime($course['Course']['start']));
 	$d_convert = array(1 => 2, 2 => 3, 3 => 4, 4 => 5, 5 => 6, 6 => 7, 7 => 1);
 
 	while ( $d_count++ < 7 ) {
+		//die($d_count);
 		$c_events = $this->CourseEvent->eventsByDay($course_id, $d_convert[$day]);
-		//pr($c_events);
+		//die(pr($c_events));
 		if ( !empty($c_events) ) {
 			foreach($c_events as $event) {
+				$start = strtotime($event['CourseEvent']['start_date']);
+				$end = strtotime($event['CourseEvent']['end_date']);
+
 				$current = strtotime("+".($d_count-1)." days",$start);
-				//die("ASD: ".$current);
+				
+				//die(date('N', $current)." - ".$d_convert[$event['CourseEvent']['day']]);
+				while(date('N', $current) != $event['CourseEvent']['day']-1) {
+					$current = strtotime('+1 day', $current);
+					//echo $current;
+				}
+
 				$dates = array();
 				while ( $current <= $end ) {
+					/*if ( $event['CourseEvent']['day'] != date('N', $current) ) {
+						$current = strtotime('+7 days', $current);
+						continue;
+					}*/
+
 					$events[] = array(
 						'course_event_id' => $event['CourseEvent']['id'], 
 						'title' => $course['Course']['name'], 

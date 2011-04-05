@@ -38,7 +38,7 @@ class UserCourse extends AppModel {
 		
 		// Haetaan kaikki kurssin tapahtumat
 		$events = $this->Course->getEvents($this->data['UserCourse']['course_id']);
-
+		//die(pr($events));
 		foreach($events as $event) {
 			$event['user_id'] = $this->data['UserCourse']['user_id'];
 
